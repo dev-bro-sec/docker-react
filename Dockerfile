@@ -7,5 +7,6 @@ RUN npm run build
 
 # default command of nginx container is starting the hosting server
 FROM nginx 
+EXPOSE 80
 # copy the compile code from the builder stage
 COPY --from=builder /app/build /usr/share/nginx/html
