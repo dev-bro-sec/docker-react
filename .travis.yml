@@ -10,3 +10,13 @@ before_install:
 
 script:
   - docker run -e CI=true ragabi/docker-react npm run test
+
+deploy:
+  provider: elasticbeanstalk
+  region: "eu-west-1"
+  app: "docker-poc"
+  env: "DockerPoc-env"
+  bucket_name: "elasticbeanstalk-eu-west-1-905361737081"
+  bucket_path: "docker-poc"
+  on:
+    branch: master
