@@ -16,10 +16,9 @@ deploy:
   provider: elasticbeanstalk
   region: "eu-west-1"
   app: "docker"
-  env: "Docker-env-1"
+  env: "Docker-env"
   bucket_name: "elasticbeanstalk-eu-west-1-905361737081"
   bucket_path: "docker"
-  zip_file: Simple Apllication-$TRAVIS_BUILD_NUMBER
   on:
     branch: master
 
