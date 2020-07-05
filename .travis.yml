@@ -15,10 +15,10 @@ deploy:
   edge: true
   provider: elasticbeanstalk
   region: "eu-west-1"
-  app: "docker"
-  env: "Docker-env"
-  bucket_name: "elasticbeanstalk-eu-west-1-905361737081"
-  bucket_path: "docker"
+  app: "docker-poc"
+  env: "DockerPoc-env"
+  bucket_name: "elasticbeanstalk-eu-central-1-905361737081"
+  bucket_path: "docker-poc"
   on:
     branch: master
 
