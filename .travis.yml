@@ -16,7 +16,7 @@ deploy:
   provider: elasticbeanstalk
   region: "eu-central-1"
   app: "docker-poc"
-  env: "DockerPoc-env"
+  env: "dockerpoc-env"
   bucket_name: "elasticbeanstalk-eu-central-1-905361737081"
   bucket_path: "docker-poc"
   on:
